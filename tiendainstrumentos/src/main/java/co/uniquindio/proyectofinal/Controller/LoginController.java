@@ -33,7 +33,7 @@ public class LoginController {
 
     @FXML
     public void loggear(ActionEvent event) throws IOException {
-        String nombreUsuario = txNombre.getText();
+        String nombreUsuario = txUsuario.getText();
 
         if(buscarUsuario(nombreUsuario)){
             Usuario usuario = x.buscarUsuario(nombreUsuario).get();

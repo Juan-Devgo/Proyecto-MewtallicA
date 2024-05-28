@@ -1,6 +1,7 @@
 package co.uniquindio.proyectofinal.Controller;
 
 import co.uniquindio.proyectofinal.Model.Usuario;
+import co.uniquindio.proyectofinal.Model.Vendedor;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -51,9 +52,9 @@ public class RegistrarUsuarioController {
         String contacto = txContacto.getText();
         String email = txEmail.getText(); 
         String identificacion = txIdentificación.getText();
+        String nombre = txNombre.getText();
 
-        mbtSeleccionarRol.get
-        Usuario usuario = new Usuario();
+        Usuario usuario = new Vendedor(nombre, identificacion, contacto, email);
     }
 
     @FXML
